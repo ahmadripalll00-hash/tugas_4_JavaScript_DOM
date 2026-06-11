@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+/* Class dinamis yang akan diinjeksi via DOM */
+.lemah {
+    width: 33%;
+    background-color: #ff4d4d;
+}
+
+.sedang {
+    width: 66%;
+    background-color: #ffc107;
+}
+
+.kuat {
+    width: 100%;
+    background-color: #28a745;
+}
+
+#status-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
