@@ -32,3 +32,12 @@ passwordInput.addEventListener('input', function () {
         statusText.style.color = "#28a745";
     }
 });
+
+const toggleBtn = document.getElementById('toggle-btn');
+
+toggleBtn.addEventListener('click', function () {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+
+    toggleBtn.textContent = type === 'password' ? 'Show' : 'Hide';
+});
